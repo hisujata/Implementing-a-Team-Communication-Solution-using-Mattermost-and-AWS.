@@ -1,6 +1,9 @@
 #Implementing a Team Communication Solution using Mattermost and AWS. 
 
-This is a scalable solution that can be hosted on a on-premises data center or on a public cloud,with its servers, storage etc. completely managed and controlled by your IT team in accordance with a company’s governance and security requirements.
+This is a scalable solution that can be hosted on a on-premises data center or on a public cloud, with its servers, storage etc. completely managed and controlled by your IT team in accordance with a company’s governance and security requirements.
+
+Here is the architecture 👇
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/Architecture.png">
 
 Step 1: VPC and Subnet Creation
 
