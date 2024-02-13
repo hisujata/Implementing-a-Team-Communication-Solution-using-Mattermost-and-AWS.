@@ -21,10 +21,9 @@ The rest of the options can be ignored
 6) Select the VPC and click on Actions->Edit DNS hostnames
 7) Enable DNS hostnames and click on Save
 
-<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot1.png"> 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/vpc.png">
 
 #b. Creation of public subnet
-
 
 1) Navigate to VPC->Subnets
 2) Click on "Create Subnet"
@@ -39,17 +38,21 @@ The other options can be ignored
 5) Once the subnet has been created, select the subnet and click on Actions->Modify Auto-assign IP settings
 6) Enable the option "Auto assign IPv4" and select Save
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot1.png"> 
+
 #c. Creation of private subnet
 
 1) Navigate to VPC->Subnets
 2) Click on "Create Subnet"
 3) Enter the following fields
 Name tag : Private Subnet
+
 VPC : Select the Project 1 VPC
 IPv4 CIDR block : 10.0.2.0/24
 The other options can be ignored
 4) Click on Create
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot2.png">
 
 Step 2: Internet Gateway and VPC
 
@@ -61,16 +64,9 @@ Step 2: Internet Gateway and VPC
 4) After the gateway is created, select it and click on Actions->Attach to VPC
 5) Select the Project 1 VPC and click on "Attach Internet Gateway"
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot3.png">
 
-#b. Creation and Configuration of Internet Gateway
-
-1) Navigate to VPCs->Internet Gateway
-2) Click on "Create Internet Gateway"
-3) Enter the name tag "Project 1 Internet Gateway" and click on "Create Internet Gateway"
-4) After the gateway is created, select it and click on Actions->Attach to VPC
-5) Select the Project 1 VPC and click on "Attach Internet Gateway"
-
-#c. Creation of public route table
+#b. Creation of public route table
 
 1) Navigate to VPC -> Route Tables and click on Create Route table
 2) Enter the name tag "Public Route Table", select the Project 1 VPC from the dropdown and click on Create
@@ -82,7 +78,9 @@ Click on Save Routes
 5) Select the Subnet Associations tab and click on Edit Subnet Associations
 6) Select the Public Subnet from the list and click on Save
 
-#d. Creation of NAT gateway
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot4.png">
+
+#c. Creation of NAT gateway
 
 1) Navigate to VPC using the Services button at the top of the screen
 2) Select NAT Gateway at the left side of the screen
@@ -92,7 +90,8 @@ Click on Save Routes
 - Allocate an elastic IP by clicking on “Allocate Elastic IP”
 4) Click on “Create NAT Gateway” to create the gateway
 
-#e. Creation of private route tables
+
+#d. Creation of private route tables
 
 1) Navigate to VPC -> Route Tables and click on Create Route table
 2) Enter the name tag "Private Route Table", select the Project 1 VPC from the dropdown and click on Create
