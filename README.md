@@ -21,6 +21,8 @@ The rest of the options can be ignored
 6) Select the VPC and click on Actions->Edit DNS hostnames
 7) Enable DNS hostnames and click on Save
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot1.png"> 
+
 #b. Creation of public subnet
 
 
