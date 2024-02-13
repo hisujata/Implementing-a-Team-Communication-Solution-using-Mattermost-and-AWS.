@@ -1,38 +1,40 @@
-Implementing a Team Communication Solution using Mattermost and AWS. 
+#Implementing a Team Communication Solution using Mattermost and AWS. 
 
 This is a scalable solution that can be hosted on a on-premises data center or on a public cloud,with its servers, storage etc. completely managed and controlled by your IT team in accordance with a company’s governance and security requirements.
 
 Step 1: VPC and Subnet Creation
 
-a. Creation of VPC
+#a. Creation of VPC
 
 1) Navigate to VPC using the Services button at the top of the screen
 2) Select "Your VPCs" on the left side of the screen
 3) Click on "Create VPC"
 4) Enter the following fields :
 
-Name: Project 1 VPC (give any suitable name)
+Name: Project 1 VPC (you can give any suitable name you like)
 IPv4 CIDR Block : 10.0.0.0/16
 The rest of the options can be ignored
 5) Select "Create VPC"
 6) Select the VPC and click on Actions->Edit DNS hostnames
 7) Enable DNS hostnames and click on Save
 
-b. Creation of public subnet
+#b. Creation of public subnet
 
 
 1) Navigate to VPC->Subnets
 2) Click on "Create Subnet"
 3) Enter the following fields
+
 Name tag : Public Subnet
 VPC : Select the Project 1 VPC
 IPv4 CIDR block : 10.0.1.0/24
 The other options can be ignored
+
 4) Click on Create
 5) Once the subnet has been created, select the subnet and click on Actions->Modify Auto-assign IP settings
 6) Enable the option "Auto assign IPv4" and select Save
 
-c. Creation of private subnet
+#c. Creation of private subnet
 
 1) Navigate to VPC->Subnets
 2) Click on "Create Subnet"
@@ -46,7 +48,7 @@ The other options can be ignored
 
 Step 2: Internet Gateway and VPC
 
-Creation and Configuration of Internet Gateway
+#a. Creation and Configuration of Internet Gateway
 
 1) Navigate to VPCs->Internet Gateway
 2) Click on "Create Internet Gateway"
@@ -55,7 +57,7 @@ Creation and Configuration of Internet Gateway
 5) Select the Project 1 VPC and click on "Attach Internet Gateway"
 
 
-Creation and Configuration of Internet Gateway
+#b. Creation and Configuration of Internet Gateway
 
 1) Navigate to VPCs->Internet Gateway
 2) Click on "Create Internet Gateway"
@@ -63,7 +65,7 @@ Creation and Configuration of Internet Gateway
 4) After the gateway is created, select it and click on Actions->Attach to VPC
 5) Select the Project 1 VPC and click on "Attach Internet Gateway"
 
-Creation of public route table
+#c. Creation of public route table
 
 1) Navigate to VPC -> Route Tables and click on Create Route table
 2) Enter the name tag "Public Route Table", select the Project 1 VPC from the dropdown and click on Create
@@ -75,7 +77,7 @@ Click on Save Routes
 5) Select the Subnet Associations tab and click on Edit Subnet Associations
 6) Select the Public Subnet from the list and click on Save
 
-Creation of NAT gateway
+#d. Creation of NAT gateway
 
 1) Navigate to VPC using the Services button at the top of the screen
 2) Select NAT Gateway at the left side of the screen
@@ -85,7 +87,7 @@ Creation of NAT gateway
 - Allocate an elastic IP by clicking on “Allocate Elastic IP”
 4) Click on “Create NAT Gateway” to create the gateway
 
-Creation of private route tables
+#e. Creation of private route tables
 
 1) Navigate to VPC -> Route Tables and click on Create Route table
 2) Enter the name tag "Private Route Table", select the Project 1 VPC from the dropdown and click on Create
