@@ -90,6 +90,7 @@ Click on Save Routes
 - Allocate an elastic IP by clicking on “Allocate Elastic IP”
 4) Click on “Create NAT Gateway” to create the gateway
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot7.png">
 
 #d. Creation of private route tables
 
@@ -103,6 +104,8 @@ Click on Save Routes
 5) Select the Subnet Associations tab and click on Edit Subnet Associations
 6) Select the private Subnet from the list and click on Save
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot8.png">
+
 Step 3 : Creation of  database and application servers
 
 1) Navigate to EC2 using the Services button at the top of the screen
@@ -113,6 +116,8 @@ Step 3 : Creation of  database and application servers
 - Select Network as "Project 1 VPC" and subnet as "Public Subnet"
 - For the security group, open the ports 80,443, 22 and 8065 for source set to "Anywhere"
 4) Launch the instance after creating a new pem file and downloading it
+
+<img src="">
 
 Creation of database server
 
