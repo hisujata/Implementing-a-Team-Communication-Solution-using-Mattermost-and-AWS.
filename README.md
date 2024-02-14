@@ -210,3 +210,5 @@ sudo -u mattermost ./bin/mattermost
 <public IP of the application server>:8065
 
 <img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot16.png">
+
+Cloud is always pay per use model and all resources/services that we consume are chargeable. After completing the project, make sure to delete each resource created in reverse chronological order if you do not wish to use the resources.
