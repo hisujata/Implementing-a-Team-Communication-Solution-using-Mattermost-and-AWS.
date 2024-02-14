@@ -117,7 +117,6 @@ Step 3 : Creation of  database and application servers
 - For the security group, open the ports 80,443, 22 and 8065 for source set to "Anywhere"
 4) Launch the instance after creating a new pem file and downloading it
 
-<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot13.png">
 
 Creation of database server
 
@@ -130,7 +129,7 @@ Creation of database server
 - For the security group, open the ports 80, 443,22 and 3306 for source set to "Anywhere"
 4) Launch the instance by selecting the same pem file created in the previous step
 
-<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot14.png">
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot13.png">
 
 Step 4: Application and Database Installation and Testing
 
@@ -165,7 +164,10 @@ Log in to MySQL with the below command and enter the above password when prompte
 
 mysql -u root -p
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot14.png">
+
 Enter the below command after you login to MySQL 
+
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'Password42!';
 
 Type ‘exit’ into the MySQL prompt and press Enter to exit out of the MySQL environment.
