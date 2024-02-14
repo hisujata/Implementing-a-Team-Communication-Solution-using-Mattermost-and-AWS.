@@ -209,3 +209,4 @@ sudo -u mattermost ./bin/mattermost
 
 <public IP of the application server>:8065
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot16.png">
