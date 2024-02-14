@@ -1,0 +1,13 @@
+<mxfile host="app.diagrams.net" modified="2024-02-14T04:30:11.809Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="lsCFzN4tzxmDpPgvxosy" version="23.1.4" type="device">
+  <diagram name="Page-1" id="fPQxUXQ2CfhN-c_rAkH4">
+    <mxGraphModel dx="786" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="87rEPkOcR8FjT58yTT47-3" value="&lt;b style=&quot;font-weight:normal;&quot; id=&quot;docs-internal-guid-9b4cb44b-7fff-8d43-ab8a-1c6d5a89291a&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;&lt;span style=&quot;border:none;display:inline-block;overflow:hidden;width:578px;height:369px;&quot;&gt;&lt;img src=&quot;https://lh7-us.googleusercontent.com/S0mpd5LOKVk7lFidqVZZ4LxXjhpQTALZVJSJ_uGQzWdHTeXQa5MFX_2lFIKaTXHjaOw6VJlBxWpaz7UBdf_c2rcRsMmmEkKw46jOpXV6Df0Wh8Ozwklaet_H847UG3wQWEGcdoSWJBE&quot; width=&quot;578&quot; height=&quot;369&quot; style=&quot;margin-left:0px;margin-top:0px;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="130" width="560" height="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
