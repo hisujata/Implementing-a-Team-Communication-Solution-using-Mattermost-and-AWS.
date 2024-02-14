@@ -208,3 +208,4 @@ sudo -u mattermost ./bin/mattermost
 2) Check whether the server has been successfully deployed by navigating to the following URL in your web browser. The web page might take a couple of minutes to load. 
 
 <public IP of the application server>:8065
+
