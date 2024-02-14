@@ -117,7 +117,7 @@ Step 3 : Creation of  database and application servers
 - For the security group, open the ports 80,443, 22 and 8065 for source set to "Anywhere"
 4) Launch the instance after creating a new pem file and downloading it
 
-<img src="">
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot13.png">
 
 Creation of database server
 
@@ -130,24 +130,39 @@ Creation of database server
 - For the security group, open the ports 80, 443,22 and 3306 for source set to "Anywhere"
 4) Launch the instance by selecting the same pem file created in the previous step
 
+<img src="https://github.com/hisujata/Implementing-a-Team-Communication-Solution-using-Mattermost-and-AWS./blob/master/screenshot14.png">
+
 Step 4: Application and Database Installation and Testing
 
+#a. Installation and configuration of MySQL
+
 1) Copy the database pem file into the application server using the below command
+
 scp -i <application server pem file> <database server pem file > ec2-user@<application server public IP>:/home/ec2-user
+
 2) Log into the application server using SSH/Putty
 3) From the application server, log into the database server using the pem file copied in step 1and the private IP address of the database server with the following command
+
 ssh -i <database server pem file> ec2-user@<private IP of database server>
+
 4) Enter the following commands to install and configure MySQL on the database server
+
 sudo yum update
+
 wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+
 sudo yum localinstall mysql57-community-release-el7-9.noarch.rpm -y
+
 sudo yum install mysql-community-server -y
+
 sudo systemctl start mysqld.service
 
 Run the below command to retrieve a temporary password for MySQL
+
 sudo grep 'temporary password' /var/log/mysqld.log | rev | cut -d" " -f1 | rev | tr -d "."
 
 Log in to MySQL with the below command and enter the above password when prompted
+
 mysql -u root -p
 
 Enter the below command after you login to MySQL 
@@ -155,28 +170,39 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'Password42!';
 
 Type ‘exit’ into the MySQL prompt and press Enter to exit out of the MySQL environment.
 Enter the below commands to complete the setup. Ignore any warning messages you receive.
+
 wget https://d6opu47qoi4ee.cloudfront.net/install_mysql_linux.sh
+
 chmod 777 install_mysql_linux.sh
+
 sudo ./install_mysql_linux.sh
+
 5) Type exit to exit the database server and go back to the application server
 
 Installation and configuration of Mattermost
 
-) Enter the following commands after logging into the application server via SSH to install and configure Mattermost
+1) Enter the following commands after logging into the application server via SSH to install and configure Mattermost
 
 wget https://d6opu47qoi4ee.cloudfront.net/install_mattermost_linux.sh
 
-
 sudo yum install dos2unix -y
+
 sudo dos2unix install_mattermost_linux.sh
 
 chmod 700 install_mattermost_linux.sh
+
 sudo ./install_mattermost_linux.sh <private IP of MySQL server>
+
 Example : sudo ./install_mattermost_linux 173.65.34.7
+
 sudo chown -R mattermost:mattermost /opt/mattermost
+
 sudo chmod -R g+w /opt/mattermost
+
 cd /opt/mattermost
+
 sudo -u mattermost ./bin/mattermost
 
 2) Check whether the server has been successfully deployed by navigating to the following URL in your web browser. The web page might take a couple of minutes to load. 
+
 <public IP of the application server>:8065
